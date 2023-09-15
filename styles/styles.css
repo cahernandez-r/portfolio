@@ -1,0 +1,123 @@
+:root{
+    --color-buttons: #e2c99f;
+    --primary-color: #353437;
+    --secondary-color: #53576b;
+    --tertiary-color: #7a7b7c;
+    --border-radius: .3rem;
+}
+
+*{
+    margin: 0;
+}
+
+button {
+    background-color: var(--color-buttons);
+    cursor: pointer;
+}
+
+.menu{
+    height: 7vh;
+    position: sticky;
+    top:0;
+}
+
+.menu__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.menu__container-menu-button{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu__container-menu-button button {
+    border: none;
+    border-radius: var(--border-radius);
+    padding: .5rem 2rem;
+}
+
+.home{
+    height: 93vh;
+    background-color:var(--secondary-color);
+    display: grid;
+    place-items: center;
+}
+
+.home__container{
+    background-color: var(--tertiary-color);
+    width: 50%;
+    border-radius: var(--border-radius);
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home__picture-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+    margin-top: 2rem;
+}
+
+.picture-container {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid white;
+}
+
+.home__welcome{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    align-content: center;
+}
+
+.home__greeting{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.home__info{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.home__button-projects button{
+    border: none;
+    border-radius: var(--border-radius);
+    padding: .8rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.about {
+    height: 90vh;
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows:50rem;
+    grid-template-columns: repeat(auto-fill,minmax(min(100%,50rem),1fr));
+    /* align-content: center; */
+    margin-top: 5rem;
+    /* background-color: var(--tertiary-color); */
+}
+
+.about__img-container  {
+    border: 2px solid gray;
+    /* margin: 0 4rem; */
+    
+}
+
+.about__description-container {
+    border: 2px solid gray;
+}
